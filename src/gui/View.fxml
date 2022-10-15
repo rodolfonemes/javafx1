@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
-      <Label layoutX="138.0" layoutY="45.0" text="calculadora de soma" />
       <Label fx:id="labelResult" layoutX="180.0" layoutY="244.0" prefHeight="30.0" prefWidth="67.0" />
-      <Label layoutX="110.0" layoutY="250.0" text="resultado" />
-      <Button fx:id="btSoma" layoutX="173.0" layoutY="201.0" mnemonicParsing="false" onAction="#onBtSomaAction" text="Button" />
-      <TextField fx:id="txtNumber1" layoutX="124.0" layoutY="90.0" promptText="NUmero1" />
-      <TextField fx:id="txtNumber2" layoutX="124.0" layoutY="150.0" promptText="numero2" />
-      <Label layoutX="190.0" layoutY="126.0" text="+" />
+      <ComboBox fx:id="comboBoxPerson" layoutX="37.0" layoutY="53.0" onAction="#onComboBoxPersonAction" prefHeight="26.0" prefWidth="234.0" promptText="Selecione uma pessoa" />
+      <Button fx:id="btAll" layoutX="307.0" layoutY="54.0" mnemonicParsing="false" onAction="#onBtAllAction" text="ALL" />
    </children>
 </AnchorPane>
